@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ABD66E49194E4878009D16C8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD66E48194E4878009D16C8 /* Cocoa.framework */; };
-		ABD66E53194E4878009D16C8 /* JsonConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD66E52194E4878009D16C8 /* JsonConverter.m */; };
+		ABD66E53194E4878009D16C8 /* JsonEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD66E52194E4878009D16C8 /* JsonEncoder.m */; };
 		ABD66E5A194E4878009D16C8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD66E59194E4878009D16C8 /* XCTest.framework */; };
 		ABD66E5B194E4878009D16C8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD66E48194E4878009D16C8 /* Cocoa.framework */; };
 		ABD66E5E194E4878009D16C8 /* libJsonConverter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD66E45194E4878009D16C8 /* libJsonConverter.a */; };
@@ -33,8 +33,8 @@
 		ABD66E4C194E4878009D16C8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		ABD66E4D194E4878009D16C8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		ABD66E50194E4878009D16C8 /* JsonConverter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JsonConverter-Prefix.pch"; sourceTree = "<group>"; };
-		ABD66E51194E4878009D16C8 /* JsonConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonConverter.h; sourceTree = "<group>"; };
-		ABD66E52194E4878009D16C8 /* JsonConverter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonConverter.m; sourceTree = "<group>"; };
+		ABD66E51194E4878009D16C8 /* JsonEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonEncoder.h; sourceTree = "<group>"; };
+		ABD66E52194E4878009D16C8 /* JsonEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonEncoder.m; sourceTree = "<group>"; };
 		ABD66E58194E4878009D16C8 /* JsonConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD66E59194E4878009D16C8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		ABD66E61194E4878009D16C8 /* JsonConverterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JsonConverterTests-Info.plist"; sourceTree = "<group>"; };
@@ -106,8 +106,8 @@
 		ABD66E4E194E4878009D16C8 /* JsonConverter */ = {
 			isa = PBXGroup;
 			children = (
-				ABD66E51194E4878009D16C8 /* JsonConverter.h */,
-				ABD66E52194E4878009D16C8 /* JsonConverter.m */,
+				ABD66E51194E4878009D16C8 /* JsonEncoder.h */,
+				ABD66E52194E4878009D16C8 /* JsonEncoder.m */,
 				ABD66E4F194E4878009D16C8 /* Supporting Files */,
 			);
 			path = JsonConverter;
@@ -230,7 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABD66E53194E4878009D16C8 /* JsonConverter.m in Sources */,
+				ABD66E53194E4878009D16C8 /* JsonEncoder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
