@@ -1,6 +1,6 @@
 //
-//  JsonConverter.h
-//  JsonConverter
+//  JsonEncoder.h
+//  JsonEncoder
 //
 //  Created by Jonathan Almeida on 2014-06-15.
 //  Copyright (c) 2014 Jonathan Almeida. All rights reserved.
@@ -23,7 +23,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDictionary (Json)
+@interface NSDictionary (JsonEncoder)
 
 + (NSDictionary *)dictionaryFromString:(NSString *)str options:(NSJSONReadingOptions)option;
 
@@ -31,7 +31,7 @@
 
 @end
 
-@interface NSData (Json)
+@interface NSData (JsonEncoder)
 
 + (NSData *)dataFromDictionary:(NSDictionary *)dict;
 
@@ -39,7 +39,7 @@
 
 @end
 
-@interface NSString (Json)
+@interface NSString (JsonEncoder)
 
 + (NSString *)stringFromDictionary:(NSDictionary *)dict;
 

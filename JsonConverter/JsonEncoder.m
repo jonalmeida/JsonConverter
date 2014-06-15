@@ -1,6 +1,6 @@
 //
-//  JsonConverter.m
-//  JsonConverter
+//  JsonEncoder.m
+//  JsonEncoder
 //
 //  Created by Jonathan Almeida on 2014-06-15.
 //  Copyright (c) 2014 Jonathan Almeida. All rights reserved.
@@ -24,7 +24,7 @@
 
 #import "JsonEncoder.h"
 
-@implementation NSDictionary (Json)
+@implementation NSDictionary (JsonEncoder)
 
 + (NSDictionary *)dictionaryFromString:(NSString *)str options:(NSJSONReadingOptions)option {
     NSError * err = nil;
@@ -47,7 +47,7 @@
 
 @end
 
-@implementation NSData (Json)
+@implementation NSData (JsonEncoder)
 
 + (NSData *)dataFromDictionary:(NSDictionary *)dict {
     NSMutableData *data = [[NSMutableData alloc] init];
@@ -63,7 +63,7 @@
 
 @end
 
-@implementation NSString (Json)
+@implementation NSString (JsonEncoder)
 
 + (NSString *)stringFromDictionary:(NSDictionary *)dict {
     return [NSString stringWithFormat:@"%@", dict];
